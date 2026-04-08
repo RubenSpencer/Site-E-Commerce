@@ -1,0 +1,154 @@
+/* Global typography and palette */
+:root {
+  --bg: #f8f9fa;
+  --text: #212529;
+  --muted: #6c757d;
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --card-bg: #ffffff;
+  --card-border: #dee2e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(#a2b1e4 0%, #5ca1e6);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0b3d91;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.container {
+  max-width: 1180px;
+}
+
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(47, 59, 138, 0.85),
+    rgba(100, 137, 209, 0.85)
+  ) !important;
+  color: #fff !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff !important;
+}
+
+.categories-bar {
+  padding: 1.25rem 0;
+}
+
+.btn-filter {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: rgba(13, 110, 253, 0.06);
+  border-radius: 0.45rem;
+  font-size: 0.95rem;
+}
+
+.btn-filter.active,
+.btn-filter:hover {
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.card {
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1.25rem 2.75rem rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.hero-title,
+.hero-eyebrow,
+.hero-sub {
+  margin: 0 0 0.75rem;
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+}
+
+.btn-primary-custom,
+.btn-outline-custom {
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.55rem;
+}
+
+.btn-primary-custom {
+  background: var(--primary);
+  color: #fff;
+  border: 1px solid var(--primary);
+}
+
+.btn-outline-custom {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background: transparent;
+}
+
+.footer,
+hr {
+  margin-top: 2rem;
+}
+
+footer {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  border-top: 1px solid var(--card-border);
+}
+
+footer h5 {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+footer ul li {
+  margin-bottom: 0.25rem;
+}

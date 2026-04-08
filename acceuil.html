@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <!-- bare de navigation -->
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background: linear-gradient(90deg, #0d6efd, #00c6ff)"
+      bg-transparent
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ElectroShop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-light" type="button">
+            🛒 Panier
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- fin de bare de navigation -->
+    <br />
+<div class="container mt-5 hero-section">
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        <!-- Texte à gauche -->
+        <div class="col-md-6 col-lg-7">
+          <p class="hero-eyebrow">Nouvelle collection 2025</p>
+          <h1 class="hero-title">
+            Le meilleur <br /><span class="text-accent">matériel PC</span
+            ><br />au meilleur prix.
+          </h1>
+          <p class="hero-sub">
+            Souris gaming, claviers mécaniques, écrans haute résolution et
+            composants de qualité professionnelle.
+          </p>
+          <a href="#products" class="btn btn-primary-custom me-3"
+            >Voir les produits</a
+          >
+          <a href="contact.html" class="btn btn-outline-custom"
+            >Nous contacter</a
+          >
+        </div>
+
+        <!-- Image à droite -->
+        <div class="col-md-6 col-lg-5 text-end">
+          <img src="img/Espace gaming dynamique et lumineux.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+   </div> 
+    <hr />
+
+    <!-- Filtre -->
+    <section class="categories-bar" id="products">
+      <div class="container">
+        <div class="d-flex flex-wrap gap-2 justify-content-center">
+          <button class="btn btn-filter active" onclick="filterProducts('all', this)">Tous</button>
+          <button class="btn btn-filter" onclick="filterProducts('Souris', this)">🖱️ Souris</button>
+          <button class="btn btn-filter" onclick="filterProducts('Claviers', this)">⌨️ Claviers</button>
+          <button class="btn btn-filter" onclick="filterProducts('Écrans', this)">🖥️ Écrans</button>
+          <button class="btn btn-filter" onclick="filterProducts('Composants', this)">🔧 Composants</button>
+        </div>
+      </div>
+    </section>
+    <!-- fin du filtre -->
+    <hr>
+    <!-- produit  -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4 product-card" data-category="Souris">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Souris logithec</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Claviers">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Clavier logithec</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Composants">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Casque audio</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Écrans">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Écran gaming</h5>
+              <p class="card-text">
+                Écran haute résolution pour gamers avec taux de rafraîchissement
+                élevé.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Composants">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Webcam HD</h5>
+              <p class="card-text">
+                Webcam haute définition pour visioconférences et streaming.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Souris">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Tapis de souris</h5>
+              <p class="card-text">
+                Tapis de souris ergonomique et antidérapant pour une précision
+                optimale.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Composants">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Haut-parleurs</h5>
+              <p class="card-text">
+                Haut-parleurs stéréo avec son immersif pour votre bureau.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Composants">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Clé USB</h5>
+              <p class="card-text">
+                Clé USB haute vitesse pour le stockage et le transfert de
+                données.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Composants">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Micro-casque</h5>
+              <p class="card-text">
+                Micro-casque avec microphone intégré pour appels et gaming.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Souris">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Souris sans fil</h5>
+              <p class="card-text">
+                Souris ergonomique sans fil pour une utilisation confortable.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 product-card" data-category="Claviers">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Clavier mécanique</h5>
+              <p class="card-text">
+                Clavier mécanique avec switches personnalisables pour typistes exigeants.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-primary">Plus d'informations</a>
+                <button class="btn btn-success">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fin produit -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>ElectroShop</h5>
+            <p>Votre boutique en ligne pour le matériel informatique et gaming.</p>
+          </div>
+          <div class="col-md-6">
+            <h5>Conditions générales</h5>
+            <ul class="list-unstyled">
+              <li> Tous les prix sont indiqués en euros TTC</li>
+              <li> Livraison gratuite pour toute commande supérieure à 50€</li>
+              <li> Droit de rétractation de 14 jours</li>
+              <li> Paiement sécurisé</li>
+              <li> Service client disponible du lundi au vendredi</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-3">
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 ElectroShop. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
